@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="963.77002"
+   height="578.27826"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="web-evo.svg"
+   inkscape:export-filename="/home/deiu/phd/thesis/svg/web-evo.png"
+   inkscape:export-xdpi="66.919998"
+   inkscape:export-ydpi="66.919998">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend"
+       style="overflow:visible">
+      <path
+         id="path4049"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <linearGradient
+       id="linearGradient3971">
+      <stop
+         style="stop-color:#6f4da2;stop-opacity:1;"
+         offset="0"
+         id="stop3973" />
+      <stop
+         style="stop-color:#b380ff;stop-opacity:0;"
+         offset="1"
+         id="stop3975" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3953">
+      <stop
+         style="stop-color:#afafe9;stop-opacity:1;"
+         offset="0"
+         id="stop3955" />
+      <stop
+         style="stop-color:#afafe9;stop-opacity:0;"
+         offset="1"
+         id="stop3957" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3945">
+      <stop
+         id="stop3963"
+         offset="0"
+         style="stop-color:#b380ff;stop-opacity:0.95384616;" />
+      <stop
+         style="stop-color:#b380ff;stop-opacity:0.63921569;"
+         offset="0.0625"
+         id="stop3969" />
+      <stop
+         style="stop-color:#b380ff;stop-opacity:0.61176471;"
+         offset="0.125"
+         id="stop3967" />
+      <stop
+         style="stop-color:#b380ff;stop-opacity:0.55686275;"
+         offset="0.25"
+         id="stop3965" />
+      <stop
+         id="stop3961"
+         offset="0.5"
+         style="stop-color:#b380ff;stop-opacity:0.44705882;" />
+      <stop
+         style="stop-color:#b380ff;stop-opacity:0;"
+         offset="1"
+         id="stop3949" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3937">
+      <stop
+         style="stop-color:#87deaa;stop-opacity:1;"
+         offset="0"
+         id="stop3939" />
+      <stop
+         style="stop-color:#87deaa;stop-opacity:0;"
+         offset="1"
+         id="stop3941" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3824-9"
+       id="linearGradient3830-7"
+       x1="162.35715"
+       y1="597.36218"
+       x2="264.78571"
+       y2="790.2193"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3824-9">
+      <stop
+         style="stop-color:#aaaaff;stop-opacity:1;"
+         offset="0"
+         id="stop3826-5" />
+      <stop
+         style="stop-color:#aaaaff;stop-opacity:0;"
+         offset="1"
+         id="stop3828-4" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3937"
+       id="linearGradient3943"
+       x1="466.3616"
+       y1="435.92468"
+       x2="997.36157"
+       y2="435.92468"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.76113531,0,0,0.89293695,77.470939,75.242855)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3953"
+       id="linearGradient4034"
+       gradientUnits="userSpaceOnUse"
+       x1="53.785721"
+       y1="701.64789"
+       x2="324.78571"
+       y2="701.64789"
+       gradientTransform="matrix(1.3474504,0,0,1,-42.280146,0.71429493)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3971"
+       id="linearGradient4037"
+       gradientUnits="userSpaceOnUse"
+       x1="53.785721"
+       y1="701.64789"
+       x2="324.78571"
+       y2="701.64789"
+       gradientTransform="matrix(1.9559049,0,0,1.530396,106.17602,-386.10839)" />
+    <filter
+       id="filter4943"
+       inkscape:label="Drop Shadow"
+       color-interpolation-filters="sRGB">
+      <feFlood
+         id="feFlood4945"
+         flood-opacity="0.7"
+         flood-color="rgb(0,0,0)"
+         result="flood" />
+      <feComposite
+         id="feComposite4947"
+         in2="SourceGraphic"
+         in="flood"
+         operator="in"
+         result="composite1" />
+      <feGaussianBlur
+         id="feGaussianBlur4949"
+         stdDeviation="5"
+         result="blur" />
+      <feOffset
+         id="feOffset4951"
+         dx="5"
+         dy="5"
+         result="offset" />
+      <feComposite
+         id="feComposite4953"
+         in2="offset"
+         in="SourceGraphic"
+         operator="over"
+         result="composite2" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="657.16938"
+     inkscape:cy="269.07684"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="844"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(48.788183,-170.15759)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter4943)"
+       id="rect4893"
+       width="821.42859"
+       height="485.71429"
+       x="17.142857"
+       y="218.07646"
+       transform="matrix(0.98086571,0,0,0.9932598,13.426419,1.4698781)"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25" />
+    <path
+       style="fill:url(#linearGradient4034);fill-opacity:1;stroke:#4d4d4d;stroke-width:1.16079736"
+       d="m 212.78125,567.375 c -100.4638,0 -181.90625,60.44156 -181.90625,135 l 363.8125,0 c 0,-74.55844 -81.44245,-135 -181.90625,-135 z"
+       id="path3054"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient4037);fill-opacity:1;stroke:#4d4d4d;stroke-width:1.73011816"
+       d="m 476.40625,481.09375 c -145.82922,0 -264.0625,92.48981 -264.0625,206.59375 0,5.05351 0.26286,10.06865 0.71875,15.03125 l 526.6875,0 c 0.45587,-4.96245 0.6875,-9.97789 0.6875,-15.03125 0,-114.10394 -118.20203,-206.59375 -264.03125,-206.59375 z"
+       id="path3054-3"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient3943);fill-opacity:1;fill-rule:nonzero;stroke:#4d4d4d;stroke-width:0.82440633;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 836.2175,702.408 835.5925,229.10677 432.81579,702.408 z"
+       id="rect3874"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3.99407697;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:5;stroke-opacity:1;stroke-dasharray:none;marker-end:none"
+       d="m 30.334845,700.93361 806.285185,0"
+       id="path4040"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-68.06073"
+       y="537.57574"
+       id="text4486"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.91434724,-0.40493102,0.40493102,0.91434724,0,0)"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="-68.06073"
+         y="537.57574"
+         style="font-size:22px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4511">Web of information</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="209.9095"
+       y="536.0957"
+       id="text4486-9"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.92471231,-0.3806667,0.3806667,0.92471231,0,0)"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="209.9095"
+         y="536.0957"
+         style="font-size:22px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4513">Social Web</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="491.84341"
+       y="533.25134"
+       id="text4486-9-1"
+       sodipodi:linespacing="125%"
+       transform="matrix(0.92601554,-0.37748539,0.37748539,0.92601554,0,0)"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="491.84341"
+         y="533.25134"
+         style="font-size:22px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4513-0">Web of data</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="134.48312"
+       y="653.79083"
+       id="text4547"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         id="tspan4549"
+         x="134.48312"
+         y="653.79083"
+         style="font-size:20px;text-align:center;text-anchor:middle">Text, graphics,</tspan><tspan
+         sodipodi:role="line"
+         x="134.48312"
+         y="678.79083"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4578">flash</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="411.66913"
+       y="555.89935"
+       id="text4547-5"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="411.66913"
+         y="555.89935"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4572">Blogs, video sharing,</tspan><tspan
+         sodipodi:role="line"
+         x="411.66913"
+         y="580.89935"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4576">social networks, wikis</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="731.42853"
+       y="465.88965"
+       id="text4547-5-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="734.61212"
+         y="465.88965"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4576-4">Linked Data, </tspan><tspan
+         sodipodi:role="line"
+         x="731.42853"
+         y="490.88965"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4623">semantic databases,</tspan><tspan
+         sodipodi:role="line"
+         x="731.42853"
+         y="515.88965"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4621">semantic search</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="632.85712"
+       y="650.17542"
+       id="text4547-5-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="632.85712"
+         y="650.17542"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4576-46">Interoperability</tspan><tspan
+         sodipodi:role="line"
+         x="632.85712"
+         y="675.17542"
+         style="font-size:20px;text-align:center;text-anchor:middle"
+         id="tspan4617">( APIs )</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="78.153603"
+       y="734.46112"
+       id="text4547-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="78.153603"
+         y="734.46112"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4578-8">1995</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="265.84518"
+       y="733.9184"
+       id="text4547-6-3"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="265.84518"
+         y="733.9184"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4578-8-1">2000</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="493.63928"
+       y="731.06128"
+       id="text4547-6-6"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="493.63928"
+         y="731.06128"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4578-8-19">2005</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="720.99396"
+       y="736.77557"
+       id="text4547-6-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/deiu/phd/thesis/presentation/pictures/web-evo.png"
+       inkscape:export-xdpi="62.25"
+       inkscape:export-ydpi="62.25"><tspan
+         sodipodi:role="line"
+         x="720.99396"
+         y="736.77557"
+         style="font-size:20px;font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan4578-8-0">2010</tspan></text>
+  </g>
+</svg>

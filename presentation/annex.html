@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Data Ownership and Interoperability for a Decentralized Social Semantic Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<style>
+        @font-face {
+          font-family: 'Oleo Script';
+          font-style: normal;
+          src: local('Oleo Script'), local('OleoScript-Regular'), url(shower/themes/ribbon/fonts/Oleo.woff) format('woff');
+        }
+	    #logo-mines {
+	        position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 1px;
+	    }
+        #logo-tsp {
+            position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 112px; 
+        }
+        #logo-samovar {
+            position: absolute;
+	        z-index: 2000;
+	        left: 650px;
+        }
+	    #upmc-slide {
+	        position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 120px;
+	    }
+        #upmc-cover {
+            position: absolute;
+            z-index: 2000;
+            right: 1px;
+            left: 924px;
+        }
+	    #header {
+	        position: absolute;
+	        display: inline-block;
+	        top: 35px;
+	        left: 240px;
+	        color: #ccc;
+            font: 30px 'PT Sans Narrow', sans-serif;
+        }
+        h3 {
+            color: #666;
+            font-size: 130%;
+        }
+        hr {
+            width:450px;
+            display:inline-block;
+            border: 1px dashed #ccc;
+        }
+        code {
+            font-size: 0.8em;
+        }
+        li {
+            font-size: 110%;   
+        }
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Data Ownership and Interoperability for a Decentralized Social Semantic Web</h1>
+		<p>by <a href="https://my-profile.eu/people/deiu/card#me" target="_blank">Andrei Vlad SAMBRA</a></p>
+	</header>
+    <section class="slide shout"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<h2>Annex</h2>
+	</div></section>
+    <!-- Annex -->
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+        <h2>WebID profile - HTTP 303 Redirect</h2>
+        <div align="center"><img src="pictures/webid-conneg.png" alt="303" /></div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- <> = relative URI -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>WebID Profile - Turtle example</h2>
+        Document URI: <strong>https://barry.example/profile</strong>
+        <hr>
+		<pre><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+<mark>&lt;&gt;</mark> a foaf:PersonalProfileDocument ;
+    foaf:maker &lt;#me&gt; ;
+    foaf:primaryTopic &lt;#me&gt; .
+<mark>&lt;#me&gt;</mark> a foaf:Person ;
+    foaf:name "Barry Examplethorn" ;
+    foaf:knows &lt;https://example.edu/p/Ann#MSc&gt; ;
+    foaf:img &lt;https://barry.example/picture.jpg&gt; .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        However, one does not need to make all information public. The easiest way to ensure privacy,
+        is to separate a profile into multiple documents. For example, all foaf:knows relations can be
+        put into a second document that is linked to the main profile, and that is protect by access control
+        policies.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>WebID Profile - Privacy</h2>
+	    Document URI: <strong>https://barry.example/profile</strong>
+        <hr style="width:500px; display:inline-block;">
+		<pre><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+&lt;&gt; a foaf:PersonalProfileDocument ;
+    foaf:maker &lt;#me&gt; ;
+    foaf:primaryTopic &lt;#me&gt; .
+&lt;#me&gt; a foaf:Person ;
+    foaf:name "Bob" ;
+    rdfs:seeAlso <mark>&lt;https://barry.example/friends&gt;</mark> .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Dereferencing the "friends" document would then trigger an authentication step, which if
+        succesful, would return the following triples. Here we can see that the document contains a list
+        of triples, belonging to the same person, identified by the WebID <http....>
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>WebID Profile - Privacy</h2>
+	    Document URI: <strong>https://barry.example/<mark>friends</mark></strong>
+        <hr style="width:500px; display:inline-block;">
+		<pre><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+&lt;&gt; a foaf:PersonalProfileDocument ;
+    foaf:maker <mark>&lt;https://barry.example/profile#me&gt;</mark> ;
+    foaf:primaryTopic <mark>&lt;https://barry.example/profile#me&gt;</mark> .
+<mark>&lt;https://barry.example/profile#me&gt;</mark> a foaf:Person ;
+    foaf:knows &lt;https://example.edu/p/Ann#MSc&gt; ;
+    foaf:knows &lt;https://company.com/people/Sue#i&gt; .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        Here is an example of cert data in a WebID profile 
+        ...
+        Revoking a certificate is very simple, as it involves removing the triples for a certain certificate. No more CRLs.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+	    <h2>WebID profile containing certificate data</h2>
+	    Document URI: <strong>https://barry.example/profile</strong>
+        <hr style="width:500px; display:inline-block;">
+		<pre><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix cert: &lt;http://www.w3.org/ns/auth/cert#&gt; .
+&lt;#me&gt; a foaf:Person ;
+    foaf:name "Barry";
+    <mark>cert:key</mark> [ a cert:RSAPublicKey;
+               cert:modulus "cb28...91a1"^^xsd:hexBinary;
+               cert:exponent 65537 ;
+             ] .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Annex</div>
+	    <h2>WebID-TLS authentication - SPARQL ASK</h2>
+        <br/>
+		<pre><code>PREFIX cert: &lt;http://www.w3.org/ns/auth/cert#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+ASK {
+    <mark>&lt;https://barry.example/profile#me&gt;</mark> cert:key [
+        cert:modulus "<mark>cb28...91a1</mark>"^^xsd:hexBinary;
+        cert:exponent <mark>65537</mark>;
+        ] .
+}</code></pre>
+	</div></section>
+        <section class="slide"><div>
+        <!-- 
+        A different type of delegation, however, involves the use of a secretary (a type of intelligent personal assistant)
+        that performs tasks on behalf of users.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - Extensions</div>
+	    <h2>WebID-TLS - access delegation</h2>
+	    Document URI: <strong>https://barry.example/profile</strong>
+        <hr style="width:500px; display:inline-block;">
+		<pre><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix cert: &lt;http://www.w3.org/ns/auth/cert#&gt; .
+
+&lt;#me&gt; a foaf:Person ;
+      foaf:name "Barry" ;
+      <mark>cert:secretary</mark> &lt;https://example.com/secretary/card#me&gt; .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        When the secretary requests access to ... it adds an extra header...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - Extensions</div>
+	    <h2>WebID-TLS - access delegation (cont.)</h2>
+	    The secretary requests access to <strong>https://example.com/private/</strong>
+        <hr style="width:680px; display:inline-block;">
+        <pre><code>GET /private/ HTTP/1.1
+Host: example.edu
+Accept: text/turtle
+<mark>On-Behalf-Of</mark>: https://barry.example/profile#me</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        Here we have an example of a policy for context "friends"
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service - Static Access Control</div>
+	    <h2>Context graph example</h2>
+	    Document URI: <strong>https://barry.example/policies/contexts/friends</strong>
+        <hr style="width:700px; display:inline-block;">
+        <pre><code>@prefix ctxt: &lt;http://ns.rww.io/context#&gt; .
+&lt;&gt; a ctxt:Context ;
+      ctxt:name "Friends" ;
+      ctxt:resources &lt;#profile&gt;, &lt;#wall&gt;, &lt;#posts&gt; .
+&lt;#profile&gt; a foaf:Person ;
+      foaf:phone "+1 222 333 444" ;
+      foaf:mbox &lt;mailto:barry@mail.com&gt; .</code></pre>
+	</div></section>
+    <section class="slide"><div>
+        <!-- here is the algorithm -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+        <h2>Relationship Monitor algorithm</h2>
+        <img class="algo-rme" src="pictures/algo-rme.png" alt="RM Algorithm" />
+        <style>
+            .algo-rme {
+                position: absolute;
+                top: 175px;
+                left: 105px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!-- *explain the algorithm* -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service - Static Access Control</div>
+        <h2>Context matching algorithm (profile)</h2>
+        <em>HTTP/1.1 GET</em> for: https://barry.example.org/<code>profile</code>
+        <img class="algo-sac" src="pictures/algo-sac.png" alt="Algorithm" height="370" />
+        <style>
+            .algo-sac {
+                position: absolute;
+                top: 250px;
+                left: 150px;
+            }
+        </style>
+	</div></section>
+        
+<!-- End -->
+	<p class="badge"><a href="https://github.com/deiu/rest-rww">Fork me on Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Andrei Sambra / https://my-profile.eu/people/deiu/card#me -->
+</body>
+</html>

@@ -1,0 +1,1140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Data Ownership and Interoperability for a Decentralized Social Semantic Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<style>
+        @font-face {
+          font-family: 'Oleo Script';
+          font-style: normal;
+          src: local('Oleo Script'), local('OleoScript-Regular'), url(shower/themes/ribbon/fonts/Oleo.woff) format('woff');
+        }
+	    #logo-mines {
+	        position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 1px;
+	    }
+        #logo-tsp {
+            position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 112px; 
+        }
+        #logo-samovar {
+            position: absolute;
+	        z-index: 2000;
+	        left: 650px;
+        }
+	    #upmc-slide {
+	        position: absolute;
+	        z-index: 2000;
+	        top: 1px;
+	        left: 120px;
+	    }
+        #upmc-cover {
+            position: absolute;
+            z-index: 2000;
+            right: 1px;
+            left: 924px;
+        }
+	    #header {
+	        position: absolute;
+	        display: inline-block;
+	        top: 35px;
+	        left: 240px;
+	        color: #ccc;
+            font: 30px 'PT Sans Narrow', sans-serif;
+        }
+        h3 {
+            color: #666;
+            font-size: 130%;
+        }
+        hr {
+            width:450px;
+            display:inline-block;
+            border: 1px dashed #ccc;
+        }
+        code {
+            font-size: 0.8em;
+        }
+        li {
+            font-size: 110%;   
+        }
+	</style>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Data Ownership and Interoperability for a Decentralized Social Semantic Web</h1>
+		<p>by <a href="https://my-profile.eu/people/deiu/card#me" target="_blank">Andrei Vlad SAMBRA</a></p>
+	</header>
+
+	<section class="slide cover" id="Cover"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="logo-tsp" src="pictures/logoTSP.gif" alt="Ecole Mines Telecom" />
+        <img id="upmc-cover" src="pictures/upmc.jpg" alt="UPMC" />
+        <img id="logo-samovar" src="pictures/samovar.jpg" alt="Samovar" />
+        <br/>
+		<h2>Data Ownership and Interoperability <br/> for a <br/> Decentralized Social Semantic Web</h2>
+		<br/>
+        <p>Defended by <a href="https://my-profile.eu/people/deiu/card#me" target="_blank">Andrei Vlad SAMBRA</a></p>
+		<p>Thesis director: Prof.Dr. Maryline LAURENT</p>
+		<img src="pictures/cover.jpg" alt="">
+		<style>
+		    #Cover {
+		        width: 1024px;
+	        }
+		    #Cover div {
+		        width: 924px;
+		        height: 470px;
+		        padding: 50px;
+		        padding-top: 120px;
+		    }		    
+			#Cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+			}
+			#Cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+			}
+			#Cover p a {
+				color:#FFF;
+			}
+            #plus {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #666;
+            }
+            #minus {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #666;
+            }
+		</style>
+	</div></section>
+<!-- Intro -->
+	<section class="slide shout"><div>
+        <!-- 
+        Please allow me to begin with the motivation that I used as the driving force for my research.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<h2>Motivation</h2>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        The information medium that we call the Web is under constant evolution. Over the last decade it has changed 
+        from a place were we went to consume information, to a place where we actively contribute with content (may that be
+        pictures, blog entries, comments, news, etc.), and we are now reaching the point where data can be linked across the Web.
+        
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - identity</div>
+		<h2>Web evolution</h2>
+		<div align="center"><img src="pictures/web-evo.png" alt="Web-evo" /></div>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        The totality of the content that we generate defines who we are online, in other words - our online identity.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - identity</div>
+		<h2>Generating content</h2>
+		<img src="pictures/content.png" alt="Content" />
+	</div></section>
+
+    <section class="slide"><div>
+        <!--
+        The totality of the content that we generate defines who we are online, in other words - our online identity.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - identity</div>
+		<h2>New accounts - same identity</h2>
+		<img src="pictures/idp.jpg" alt="Forms" />
+	</div></section>
+	<section class="slide"><div>
+        <!--
+        Because of the way the Web works today, the more services and applications we use, the more we face an
+        increasing fragmentation of our online identity. A direct result of this identity fragmentation is that user-generated 
+        content is trapped inside so-called "data silos".
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - identity</div>
+		<h2>Identity fragmentation</h2>
+		<div align="center"><img src="pictures/walled_garden.jpg" alt="Walled gardens">
+		<figcaption>"Walled Gardens" - The Economist</figcaption>
+		</div>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        The obvious solution would be to have one online identity, and to be able to store the content that we generate (at least partially), 
+        so that we can reuse parts of it each time we use a particular service. By doing so, we are no longer dependent on a specific service
+        provider, giving us freedom to move from service to service, without worrying that our data remains trapped inside a silo. In other words,
+        we become our own identity provider.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - identity</div>
+		<h2>Single, user-centric identity</h2>
+		<img src="pictures/user-centred.jpg" alt="User-centred"/ height="400" >
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        On the other hand, certain online activities (such as shopping, communicating with other people, or even managing our identity) require 
+        us to prove that we own a given identity. Online, this process is commonly known as authentication.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - authentication</div>
+		<h2>Identification through authentication</h2>
+		<div align="center"><img src="pictures/id-auth.jpg" alt="id-auth" /></div>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - authentication</div>
+		<h2>Decentralized authentication - 3rd party</h2>
+        <img id="idps" src="pictures/idps.jpg" alt="IdPs" />
+        <img class="next" id="idps" src="pictures/idps-now.jpg" alt="IdPs now" />
+        <style>
+            #idps {
+                position: absolute;
+                top: 250px;
+                left: 150px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        If we want to benefit from a user-centric identity, where we are in control of our data, then our authentication protocol must respect
+        the following requirements: decentralized (since we control our identity), no a priori trust (eg. I let you in because I trust Google), 
+        use Web standards to increase interoperability, modular - decoupled from identity (easily swappable), and last but not least - user-friendly  
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation - authentication</div>
+		<h2>Authentication protocol requirements</h2>
+        <ul>
+            <li>decentralized (not managed by one organization in particular)</li>
+            <li>controlled by the user (privacy)</li>
+            <li>must not require existing trust relationships between parties</li>
+            <li>Web scale interoperability (based on Web standards)</li>
+            <li>modular (decoupled from identity)</li>
+        </ul>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        Based on this motivation, I would to introduce our contributions, which complement the three topics I have just presented.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Motivation</div>
+		<h2>Contributions</h2>
+		<br/>
+		<ol class="next">
+			<li>User-centric identity: <strong>WebID (Web Identity and Discovery)</strong></li>
+		    <li>Decentralized authentication: <strong>WebID-TLS</strong></li>
+            <li>Privacy: <strong>Social Access Control Service</strong></li>
+		</ol>
+	</div></section>
+<!-- Contents -->
+	<section class="slide"><div>
+        <!--
+        The remainder of this presentation is structured as follows:
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<h2>Contents</h2>
+        <h3><font color="grey">1. Motivation</font></h3>
+        <h3>2. WebID</h3>
+        <h3>3. WebID-TLS</h3>
+        <h3>4. Social Access Control Service</h3>
+        <h3>5. Implementation efforts</h3>
+        <h3>6. Conclusions and perspectives</h3>
+        <style>
+            h3 { color: #000; }
+        </style>
+	</div></section>
+<!-- End intro -->
+    
+<!-- WebID -->
+	<section class="slide"><div>
+        <!-- 
+        WebID, our first contribution, is a simple and universal identification mechanism that is decentralized at a Web scale, 
+        openly extensible, and offers a generic identity that can be used for any service.
+        It does this by applying the best practices of Web Architecture while building on well established and
+        widely deployed protocols and standards including HTML, URIs, HTTP, and RDF semantics. 
+        WebID is a work-in-progress open standard within the World Wide Web Consortium, to which we are actively contributing.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<div id="header">WebID</div>
+        <h2>Web Identity and Discovery</h2>
+        <ul>
+            <li>universal identification mechanism
+            <ul>
+                <li>decentralized (Web scale)</li>
+                <li>openly extensible</li>
+                <li>generic identity</li>
+            </ul>
+            </li>
+            <li>standards-based interoperability (HTTP, URIs, RDF and REST)</li>
+            <li>work-in-progress open standard within the W3C <small>[1]</small></li>
+        </ul>
+        <br/>
+        <small>1. https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/identity-respec.html</small>
+	</div></section>
+    <section class="slide"><div>
+        <!-- WebID is composed of the following elements... -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+        <h2>WebID - components</h2>
+		<br/>
+        <h2 class="next">1. The WebID (URI)</h2>
+        <h2 class="next">2. The WebID profile</h2>
+    </div></section>
+	<section class="slide"><div>
+        <!-- 
+        The WebID (aka WebID URI) is a unique identifier which works at the Web scale. It is basically a URI with an 
+        HTTP or HTTPS scheme which denotes an Agent. In this case, we have timbl's WebID.
+        The WebID URI usually contains a hash (fragment identifier) which serves to make the difference between the 
+        document containing the data, and the unique identifier which is assigned to data describing the agent.
+        303 redirects can be used instead, though they impact performance by forcing another roundtrip.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>1. The WebID (URI)</h2>
+		<div align="center"><img src="pictures/webid-timbl.png" alt="WebID"></div>
+	</div></section>
+	<section class="slide"><div>
+        <!-- 
+        The document containing user data is called the WebID profile. It is....
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+		<h2>2. The WebID profile</h2>
+        <ul>
+            <li>used to describe an Agent (i.e. a user)</li>
+            <li>uses <a href="http://www.w3.org/TR/rdf-schema/" target="_blank">RDF</a> (Resource Description Framework) to increase interoperability</li>
+			<li>must be published using the <a href="https://en.wikipedia.org/wiki/Turtle_(syntax)" target="_blank">Turtle</a> syntax </li>
+            <li>can be split into several access-controlled documents</li>
+            <li>should be hosted on a <em>user-controlled</em> device</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+        <!-- 
+        A WebID profile can contain any arbitrary data, as long as it is related to a user. For example, it contains
+        a description of a user (using FOAF), blog entries or forum posts (using SIOC), and also preferences/settings 
+        that are specific to Web applications (using WAPP). 
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>WebID profile - extensibility</h2>
+		<div align="center"><img src="pictures/profile.png" alt="WebID profile" style="height:420px;"></div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        To achieve privacy, a WebID profile can be split into multiple documents, each protected by access control mechanisms. In this case we have 
+        a WebID which belongs to a user whose name is Barry and who is 31 yo. Instead of listing his friends in the same profile document, Barry created
+        a protected document called <friends> which contains all foaf:knows relations. We can split a profile into as many documents as we want, depending
+        on how fine-grained we want the access control to be.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+	    <h2>Privacy</h2>
+		<div align="center"><img src="pictures/webid-privacy.png" alt="WebID privacy" style="height:420px;"></div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Unfortunately, there are some drawbacks when using WebID. To start, decentralized and unique identifiers means that
+        users can be tracked across services. This issue cannot be easily solved, especially when reputation and trust are based
+        on persisten identities. However, we don't always need persisten identities...multiple/proxy/DNT/etc...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+		<h2>Privacy and security considerations</h2>
+        <strong>Privacy:</strong>
+        <ul>
+			<li>tracking/fingerprinting the user across different services
+                <ul>
+                    <li>proxy system (short-lived identifiers)</li>
+                    <li>Do Not Track mechanism</li>
+                </ul>
+            </li>
+        </ul>
+        <strong>Security:</strong>
+        <ul>
+			<li>open to Man-in-the-Middle attacks when not using HTTPS</li>
+            <li>profile data can be modified if the IdP server is compromised</li>
+		</ul>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        To quickly summarize what WebID is, we have seen that it offers...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID</div>
+		<h2>Key points</h2>
+        <ul>
+            <li>composed of:
+        		<ul>
+		        <li>a unique identifier (HTTPS URI)</li>
+		        <li>a profile document</li>
+		        </ul>
+            </li>
+			<li>rich profiles expressed using RDF</li>
+            <li>Web-scale interoperability thanks to RDF</li>
+			<li>we control our identity (<em>where</em> data is stored / <em>who</em> can access it)</li>
+			<li>currently being standardized within the W3C (author and editor)</li>
+		</ul>
+	</div></section>
+<!-- WebID-TLS -->
+    <section class="slide"><div>
+        <!-- 
+        Having introduced WebID, please allow me now to present our second contribution, a decentralized authentication protocol based on WebID.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+        <h2>Moving on...</h2>
+            <h3>1. Motivation</h3>
+            <h3>2. WebID</h3>
+            <h3><strong>3. WebID-TLS</strong></h3>
+        <style>
+            h3 strong {
+                color: #000 !important;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <!-- 
+        WebID-TLS enables secure, efficient and user friendly authentication on the Web. It does this by using client certificates instead
+        of passwords during the authentication process. At the same time, it is easy to implement since it takes advantage of the 
+        cryptography behind the Transport Layer Security (TLS) protocol. And finally, because it does not depend on PKI/CA, it does not 
+        suffer from the problems that correspond to them.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<h2>WebID-TLS</h2>
+        <ul>
+            <li>secure, efficient and user-friendly authentication on the Web</li>
+            <li>uses client certificates to replace passwords</li>
+            <li>easy to implement - reuses existing technologies (TLS, HTTP, RDF)</li>
+            <li>certificates not depend on PKI and Certification Authorities</li>
+            <li>also a work-in-progress open standard within the W3C <small>[1]</small></li>
+        </ul>
+        <br/>
+        <small>1. https://dvcs.w3.org/hg/WebID/raw-file/tip/spec/tls-respec.html</small>
+    </div></section>
+    <section class="slide"><div>
+        <!-- 
+        While WebID is the first attempt at a unified and user-centric identity on the Web, as far as decentralized authentication protocols go,
+        there exist several solutions, starting with OpenID.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - existing solutions</div>
+		<h2>Existing solutions</h2>
+		<div align="center" class="next"><img src="pictures/auth.png" alt="Auth" />
+		</div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Even so, the current solutions have their limitations, such as the fact that they require preexisting trust relationships, 
+        they support a limited number of IdPs, they are all based on passwords (insecure), and they do not allow to use generic 
+        attributes during authentication.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - existing solutions</div>
+		<h2>Existing solutions - limitations</h2>
+        <ul>
+            <li>require <em>preexisting</em> trust relationships</li>
+            <li>limited number of supported IdPs</li>
+            <li>insecure - based on passwords</li>
+            <li>only support predefined attributes (no generic data)</li>
+            <li>attributes cannot be changed once authenticated</li>
+        </ul>
+    </div></section>
+    <section class="slide"><div>
+        <!--
+        The components of WebID-TLS are as follows...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+		<h2>WebID-TLS - components</h2>
+        <br/>
+		<h2 class="next">1. X.509 client certificate</h2>
+        <h2 class="next">2. WebID</h2>
+	</div></section>    
+    <section class="slide"><div>
+        <!-- 
+        Compared to standard PKI, WebID-TLS works just as well with self-signed certificates. Of course, classic PKI can also be used 
+        but it is not mandatory: certificates can be reused/repurposed within a company. To link the cert to the user's WebID, we store 
+        the WebID URI within an extension of the certificate, called the SAN. The preferred method for issuing a certificate is to use <keygen>...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+		<h2>X.509 client certificate</h2>
+        <ul>
+            <li>bootstraps the authentication process (discovery)</li>
+            <li>X509v3 extension - <em>Subject Alternative Name</em> <code>URI:https://bob.example/profile#me</code></li>
+            <li>can be self-signed (classic PKI can still be used)</li>
+            <li>preferred issuing method - HTML5's <code>&lt;keygen&gt;</code> element (the keys are generated locally) <!-- the server receives the public key, creates an X.509 cert which is returned to the user -->
+            </li>
+            <!-- <li>a user can have any number of certificates</li> -->
+		</ul>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Issuing a cert...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+	    <h2>Issuing a certificate - &lt;keygen&gt;</h2>
+		<div align="center"><img src="pictures/cert-gen.png" alt="Cert gen"></div>
+	</div></section>
+    <!--
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+		<h2>Why WebID?</h2>
+        <br/>
+        <ul>
+            <li>universal identification based on HTTP URIs</li>
+            <li>generic user attributes can be obtained during authentication</li>
+            <li>dynamic authorization decisions based on WebID profile data inference (web of trust based on social links -- <em>friend of a friend</em> system)</li>
+		</ul>
+	</div></section>
+    -->
+	<section class="slide"><div>
+        <!-- 
+        Once a certificate has been issued, it must be linked to the WebID profile. Linking a certificate is a simple matter of
+        representing its public key using RDF (cert vocab).
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+	    <h2>Linking a certificate to a WebID profile</h2>
+		<div align="center">
+            <img src="pictures/profile-webidtls.png" alt="WebID-TLS Profile" />
+            <img src="pictures/profile-webidtls1.png" alt="WebID-TLS revocation" />
+        </div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Once a certificate has been issued, it must be linked to the WebID profile. Linking a certificate is a simple matter of
+        representing its public key using RDF (cert vocab).
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+	    <h2>Revoking a client certificate</h2>
+		<div align="center">
+            <img src="pictures/profile-webidtls1.png" alt="WebID-TLS revocation" />
+        </div>
+	</div></section>
+	<section class="slide"><div>
+        
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+	    <h2>Authentication protocol</h2>
+		<div align="center" class="next"><img src="pictures/webid-tls.png" alt="WebID-TLS"></div>
+	</div></section>
+<!-- WebID delegation -->
+    <section class="slide"><div>
+        <!-- 
+        WebID-TLS has been extended to allow delegated authentication. The principle is very similar to how SAML works, and 
+        it applies when the SP is not capabale of performing WebID-TLS authentication itself. In this case, the SP relies on
+        a trusted RP service that handles the entire authentication process, and then returns a verdict which allows the SP
+        to either log the user in or not.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - Extensions</div>
+		<h2>WebID-TLS - delegated authentication</h2>
+		<div align="center"><img src="pictures/webid-delegated.png" alt="WebiD Delegated auth" />
+		</div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        WebID-TLS was designed to facilitate authentication for users, yet it still involves a certain degree of on-demand 
+        user interaction: having to be present to click on a login link and to select a certificate during authentication.
+        However, sometimes we may need to automate certain tasks, and in that case we may not always be present. For this reason,
+        we have investigated the possibility of delegating a personal assistent (a robot) that would perform tasks on behalf of
+        users.        
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS - Extensions</div>
+		<h2>WebID-TLS - access (task) delegation</h2>
+		<div align="center"><img src="pictures/webid-action.png" alt="WebiD action delegation" />
+		</div>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Before moving on, let us now quickly go over the important points of WebID-TLS...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">WebID-TLS</div>
+		<h2>Key points</h2>
+        <ul>
+			<li>trully decentralized authentication (<em>no preexisting</em> trust)</li>
+            <li>based on:
+        		<ul>
+                    <li><a href="https://en.wikipedia.org/wiki/X.509" target="_blank">X.509</a> client certificates</li>
+                    <li><a href="#19">WebID</a></li>
+		        </ul>
+            </li>
+            <li>operates over TLS (though not dependent on CAs)</li>
+			<li>certificate revocation is instant</li>
+			<li>currently being standardized within the W3C (editor)</li>
+		</ul>
+	</div></section>
+<!-- End WebID-TLS -->
+<!-- Access Control -->
+    <section class="slide"><div>
+        <!--
+        Having seen WebID and WebID-TLS, allow me to introduce our third contribution, SACS.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+        <h2>Moving on...</h2>
+        <h3>1. Motivation</h3>
+        <h3>2. WebID</h3>
+        <h3>3. WebID-TLS</h3>
+        <h3><strong>4. Social Access Control Service</strong></h3>
+        <style>
+            h3 strong {
+                color: #000 !important;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <!--
+        Access control for the Semantic Web applies to two types of resources: to documents (as is the case for WAC), 
+        or to triples within documents (AIR and S4AC). While the last two are similar, there are a few subtle differences, such as..
+        We believe that current access control mechanisms, while adeguate in their job of protecting access to documents, lack a 
+        certain flexibility when applied in a social environment, where relationships between users tend to be dynamic and prone to change.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+		<h2>Existing solutions</h2>
+        <strong>Web Access Control (WAC)</strong> <small>[J. Hollenbach, J. Presbrey, T. Berners-Lee]</small>
+            <ul id="ul">
+                <li>document level (files)</li>
+            </ul>
+        <strong>Accountability in RDF (AIR)</strong> <small>[L. Kagal, I. Jacobi, A. Khandelwal]</small>
+            <ul id="ul">
+                <li>documents and triples (within documents)</li>
+                <li>justification</li>
+            </ul>
+        <strong>Social Semantic Web Access Control</strong> <small>[S. Villata, N. Delaforge, F. Gandon]</small>
+            <ul id="ul">
+                <li>triple level</li>
+                <li>tag-based access conditions</li>
+            </ul>
+        <style>
+            #ul { margin-left: 50px; }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        During our research we have managed to find two important social metrics that help us model this dynamicity. 
+        To begin, we were inspired by Hall's "" which examines the various cultural concepts of space between people and how 
+        differences among them affect modern society. Hall talks about four spaces: intimate, personal (close), social and public. (show on the image). 
+        Applying these concepts resulted in a metric called the "social proximity distance".
+
+        Next, we started from the concept that we as humans subsconsciously label other people and objects around us, and as our relation 
+        towards them evolves over the time, we either preserve or modify these labels. Moreover, we tend to label people and objects
+        based on particular contexts (such as "people I do sports with", "family", "boss", etc.). This has lead us to our second metric, 
+        the "social contexts".
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+        <h2>Social metrics</h2>
+        
+        <div class="next">
+        <img class="prox" src="pictures/proximity0.png" alt="Proximity" height="500" />
+        <ul>
+            <li><strong>Social proximity distance</strong>
+                <br/>Hall's <em>"The Hidden Dimension"</em>
+            </li>
+        </ul>
+        </div>
+        <br/>
+        <ul>
+            <li class="next"><strong>Social context</strong>
+            <br/>(for easy management, contexts <br/>can be grouped together: <br/><em>Work, Family, Friends</em>, etc.)
+            <img class="prox" src="pictures/proximity.png" alt="Proximity" height="500" /></li>
+        </ul>
+		
+        <style>
+            .prox {
+                position: absolute;
+                top: 120px;
+                left: 500px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        To exemplify how proximity distance and contexts work, please consider the following scenario:
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+        <h2>Scenario</h2>
+        <br/>
+        <ol>
+            <li>Barry met Ann (Public) 
+                <img class="scen" src="pictures/scenario/0.png" alt="Scenario" height="500" />
+            </li>
+            <li class="next">Ann "knows" Barry (Social)
+                <img class="scen" src="pictures/scenario/1.png" alt="Scenario" height="500" />
+            </li>
+            <li class="next">...friendly interaction...</li>
+            <li class="next">Close friends (Close)
+                <img class="scen" src="pictures/scenario/2.png" alt="Scenario" height="500" />
+            </li>
+        </ol>
+        <style>
+            .scen {
+                position: absolute;
+                top: 120px;
+                left: 500px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        Our proposed solution (SACS) is orthogonal to existing access control systems, as it is based on social proximity levels
+        and contexts together with our online interactions (e.g. sharing a resource with someone, tagging a user within a specic 
+        context, etc.), in order to apply access control policies to a user's online social resources (e.g. a user's prole, wall
+        posts, conversations).
+        The figure to the right provides an architectural overview of our solution.
+
+        1. The RM engine handles the dynamic evolution of user relationships and it applies to user generated content (e.g. profile 
+        information, wall posts, conversations, etc.).
+
+        2. The SAC engine is used to define static access control policies that apply to most types of resources (either RDF or binary
+        documents). For policy enforcing, the SAC may rely on existing AC systems (WAC, AIR, etc), which would then store access control rules in the 
+        policy database. Rules are represented using RDF, which means that they can be easily exported to be used on other platforms.
+
+
+        3. This database contains a list of interactions between the user and his/her friends. History entries are independently 
+        created whenever the user interacts with other people, such as sharing a resource with someone, tagging a person within a 
+        specic context, etc. The history is stored as RDF triples.
+
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+		<h2>Components - overview</h2>        
+        <br/>
+        <img class="sacs" src="pictures/sacs.png" alt="SACS" />
+        <ol>
+            <li class="next"><strong>Relationship Monitor</strong> engine
+                <!-- handles the dynamic evolution of user relationships -->
+                <img class="sacs" src="pictures/rme-high.png" alt="RME-highlight" />
+                <br/><br/>
+            </li>
+            <li class="next"><strong>Static Access Control</strong> engine 
+                <!-- defines static access control policies -->
+                <img class="sacs" src="pictures/sac-high.png" alt="SAC-highlight" />
+            </li>
+        </ol>
+        <style>
+            .sacs {
+                position: absolute;
+                top: 200px;
+                left: 500px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!--
+        The RM is used for two distinct types of actions. First, it serves as a visual aid when assigning context labels to resources. 
+        And second, as an enforcer, where it serves to dynamically handle a request for a resource. Unfortunately, this operation mode 
+        was not fully investigated, as it involves complex machine learning algorithms, but it should operate as follows...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+		<h2>1. Relationship Monitor engine</h2>
+        <div><img id="rmeh" src="pictures/rme-high.png" alt="RME-highlight" />
+        <ol>
+            <li id="li"><strong>visual aid:</strong> assists the user when <br/> assigning contexts (visual feedback)</li>
+            <li id="li"><strong>enforcer:</strong> handles requests for <br/> resources based on user types:
+                <ul>
+                    <li id="li">unknown user (not authenticated)</li>
+                    <li id="li">known user - relationship type:
+                        <ul>
+                            <li id="li"><em>dynamic</em></li> <!--  (Relationship History database) -->
+                            <li id="li"><em>static/less dynamic</em></li> <!-- (#family, #girlfriend, <em>intimate</em> proximity level) -->           
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        </div>
+        <style>
+            #rmeh {
+                position: absolute;
+                top: 200px;
+                left: 500px;
+            }
+            #li {
+                font-size: 100%;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <!-- 
+        The next component of SACS is the SAC. In turn, it is comprised of the following components: a "contexts" module which handles access control
+        depending on contexts (...); a generic module which handles access control for documents (WAC/AIR); and a rules database...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+		<h2>2. Static Access Control engine</h2>
+        <ol>
+            <li id="li">contexts module
+                <ul>
+                    <li id="li">performs context matching <br/>and generates <em>specific views</em> <br/>for RDF content (profile, wall)</li>
+                </ul>
+            </li>
+            <li id="li">generic module (out of scope)
+                <ul>
+                    <li id="li">based on WAC/AIR</li>
+                </ul>
+            </li>
+            <li id="li">rules database (triple store)
+                <ul>
+                    <li id="li">contextual &amp; generic rules</li>
+                </ul>
+            </li>
+        </ol>
+        <div id="sach"><img src="pictures/sac-high.png" alt="SAC-highlight" /></div>
+        <style>
+            #sach {
+                position: absolute;
+                top: 200px;
+                left: 500px;
+            }
+            #li {
+                font-size: 100%;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <!--  
+        The context module depends on three types of resource graphs. One graph that contains a list of users to which contexts have been
+        assigned. Multiple context graphs which hold the resources (triples) that belong to a given context. Finally, a list of all contexts
+        belonging to a given user.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service - Static Access Control</div>
+        <h2>Context matching</h2>
+        <strong>Types of graphs:</strong>
+		<ol style="position: absolute; top: 250px; left: 150px;">
+            <li>List of users
+                <ul>
+                    <li>all users to which contexts were assigned</li>
+                </ul>
+            </li>
+            <li>Context
+                <ul>
+                    <li>contains resources that belong to a given context</li>
+                </ul>
+            </li>
+            <li>List of all context graphs created by a given user</li>
+        </ol>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        To exemplify how proximity distance and contexts work, please consider the following scenario:
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+        <h2>Example</h2>
+        <ol>
+            <li>Ann requests Barry's <strong>profile</strong></li>
+            <li>Contexts for Ann: <strong>Close friends</strong></li>
+            <li>Get all triples matching user <br/><strong>Ann</strong>, context <mark>Close friends</mark> and <br/>type of resource: <strong>profile</strong></li>
+            <li>Return a new graph with Ann's <br/> view of Barry's profile</li>
+            <li>(public view if unknown user)</li>
+        </ol>
+        <img class="exemple" src="pictures/scenario/2.png" alt="Scenario" height="500" />
+        <style>
+            .exemple {
+                position: absolute;
+                top: 120px;
+                left: 500px;
+            }
+        </style>
+	</div></section>
+    <section class="slide"><div>
+        <!-- 
+        When combining all these elements together, it results a system that is capable to adapt...
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Social Access Control Service</div>
+		<h2>Key points</h2>
+        <ul>
+            <li>a system able to adapt to dynamic social events</li>
+            <li>proximity levels and context as metrics to express dynamicity</li>
+            <li>depends on the user's interaction history</li>
+            <li>improves privacy by suggesting potential changes in the relationship with a given user</li>
+        </ul>
+    </div></section>
+<!-- MyProfile -->
+    <section class="slide"><div>
+        <!--
+        To validate our research work, we have implemented the various theoretical concepts into real world applications.
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+        <h2>Moving on...</h2>
+        <h3>1. Motivation</h3>
+        <h3>2. WebID</h3>
+        <h3>3. WebID-TLS</h3>
+        <h3>4. Social Access Control Service</h3>
+        <h3><strong>5. Implementation efforts</strong></h3>
+        <style>
+            h3 strong {
+                color: #000 !important;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+        <div id="header">Implementation efforts - Projects</div>
+        <div>
+            <img src="pictures/myprofile-logo.jpg" alt="MyProfile" height="50" />
+            <ul>
+                <li>WebID-based identity provider</li>
+                <li>Online: <a href="https://my-profile.eu/" target="_blank">https://my-profile.eu/</a></li>
+                <li>Code: <a href="https://github.com/MyProfile/myprofile" target="_blank">https://github.com/MyProfile/myprofile</a> (MIT license)</li>
+            </ul>
+        </div>
+        <div>
+            <img src="pictures/rww.png" alt="Read Write Web" height="50" />
+            <ul>
+                <li>Semantic personal data store (LD Dropbox)</li>
+                <li>Online: <a href="https://rww.io/" target="blank">https://rww.io/</a></li>
+                <li>Code: <a href="https://github.com/deiu/rww.io" target="_blank">https://github.com/deiu/rww.io</a> (MIT license)</li>
+            </ul>
+        </div>
+    </div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Implementation efforts</div>
+	    <h2>MyProfile project</h2>
+		<ul>
+			<li>1st prototype offering identity, authentication and privacy</li>
+			<li>WebID-based user-centric identities</li>
+            <li>WebID-TLS authentication</li>
+			<li>provides data ownership (physical control when self-hosted)</li>
+			<li>easy management of our social graph</li>
+		</ul>
+	</div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Implementation efforts</div>
+		<img id="myp" src="pictures/myprofile.jpg" alt="Myprofile" height="500" />
+        <style>
+            #myp {
+                position: absolute;
+                top:110px;
+                left:80px;
+            }
+        </style>
+	</div></section>
+<!-- RWW -->
+	<section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Implementation efforts</div>
+		<h2>RWW.IO project</h2>
+        <ul>
+			<li>Semantic personal data store (but not only)</li>
+            <li>conceived and implemented during my visit at MIT</li>
+			<li>no <em>dedicated</em> API! (simple Web interactions using REST principles)</li>
+            <li>built-in access control using Web Access Control</li>
+			<li>supports many RDF media types <small>(<a href="https://en.wikipedia.org/wiki/Turtle_(syntax)" target="_blank">Turtle</a>, <a href="https://en.wikipedia.org/wiki/RDF/XML" target="_blank">RDF/XML</a>, <a href="https://en.wikipedia.org/wiki/Notation3" target="_blank">Notation3</a>, <a href="https://en.wikipedia.org/wiki/N-Triples" target="_blank">N-triples</a>, <a href="https://en.wikipedia.org/wiki/JSON-LD" target="_blank">JSON-LD</a>)</small></li>
+			<li>other media types too <small>(text, html, js, css, png, jpg, gif)</small></li>
+            <li>RDF resources can be retrieved and manipulated using <a href="https://en.wikipedia.org/wiki/Sparql" target="_blank">SPARQL</a></li>
+		</ul>
+		<style>
+		    small { font-size: 0.7em; }
+		</style>
+	</div></section>
+<!-- Web apps -->
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Implementation efforts</div>
+	    <h2>Libraries and applications</h2>
+		<ul>
+            <li>
+                <strong>WebID authentication libraries</strong>
+                <ul>
+                    <li>WebIDauth <small>(https://github.com/WebIDauth/WebIDauth)</small></li>
+                    <li>WebIDDelegatedAuth <small>(https://github.com/WebIDauth/WebIDDelegatedAuth)</small></li>
+                </ul>
+            </li>
+            <li>
+                <strong>RWW applications</strong>
+                <ul>
+                    <li>LD-cal <small>(https://github.com/rww-apps/ld-cal)</small></li>
+                    <li>FindMyLoc <small>(https://findmyloc.rww.io/)</small></li>
+                </ul>
+            </li>
+        </ul>
+        <br/>
+        <p>All implementation   software is released under the MIT license.</p>
+	</div></section>
+<!-- Conclusions -->
+    <section class="slide"><div>
+        <!--
+        In conclusion, I would like to go one more time over the key aspects of our contributions
+        -->
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+        <h2>Moving on...</h2>
+        <h3>1. Motivation</h3>
+        <h3>2. WebID</h3>
+        <h3>3. WebID-TLS</h3>
+        <h3>4. Social Access Control Service</h3>
+        <h3>5. Implementation efforts</h3>
+        <h3><strong>6. Conclusions and perspectives</strong></h3>
+        <style>
+            h3 strong {
+                color: #000 !important;
+            }
+        </style>
+    </div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Conclusions and perspectives</div>
+		<h2>Decentralized identity and authentication</h2>
+        <h3><strong>Identity</strong></h3>
+        <ul>
+            <li>decentralized identity at the <strong>Web scale</strong> (WebID)</li>
+            <li>rich and interoperable thanks to Semantic Web standards</li>
+        </ul>        
+        <h3><strong>Authentication</strong></h3>
+        <ul>
+            <li>decentralized authentication (WebID-TLS)</li>
+            <li>generic attributes (complex reasoning based on user data)</li>
+            <li>side effect: no more passwords!</li>
+        </ul>
+	</div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Conclusions and perspectives</div>
+		<h2>Access control and data ownership</h2>
+        <h3><strong>Access control</strong></h3>
+        <ul>
+            <li>SACS offers dynamic access control system for the social Web</li>
+            <li>follows our social evolution based on online interaction history</li>
+            <li>proximity distance and context are used as social metrics</li>
+        </ul>
+        <h3><strong>Data ownership</strong></h3>
+        <ul>
+            <li>self-hosting our data using RWW.IO</li>
+        </ul>
+	</div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Conclusions and perspectives</div>
+		<h2>Perspectives - Academic</h2>
+        <ul>
+            <li>fully implement SACS: 
+                <ul>
+                    <li>machine learning for the Relationship Manager engine</li>
+                    <li>more social metrics</li>
+                    <li>threshold when changing proximity distance and/or contexts</li>
+                </ul>
+            </li>
+            <li>canonical representation of WebID profiles (to be signed)</li>
+        </ul>
+	</div></section>
+    <section class="slide"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+	    <div id="header">Conclusions and perspectives</div>
+		<h2>Perspectives - Weaving the future Web</h2>
+        <ul><li>Privacy-friendly applications:
+            <ul>
+                <li>hosted <em>anywhere</em> or also deployable on private servers</li>
+                <li><strong><em>do not</em></strong> store the user data in a silo! <small>(you choose where)</small></li>
+                <li>rely on WebID to store application preferences/settings</li>
+            </ul>
+            </li>
+            <li>The Web as an OS
+                <ul>
+                    <li>filesystem-like storage (RWW.IO)</li>
+                    <li>client-side applications</li>
+                </ul>
+            </li>
+        </ul>
+	</div></section>
+<!-- End -->
+    <section class="slide shout"><div>
+        <img id="logo-mines" src="pictures/logo.png" alt="Ecole Mines Telecom" />
+        <img id="upmc-slide" src="pictures/upmc.jpg" alt="UPMC" />
+		<h2>Thank you</h2>
+	</div></section>
+    
+<!-- End -->
+	<p class="badge"><a href="https://github.com/deiu/phd/presentation">Fork me on Github</a></p>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2013 Andrei Sambra / https://my-profile.eu/people/deiu/card#me -->
+</body>
+</html>
